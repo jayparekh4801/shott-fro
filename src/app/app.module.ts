@@ -16,6 +16,7 @@ import { SubscriptionComponent } from './Components/subscription/subscription.co
 import { TvHomeComponent } from './Components/tv-home/tv-home.component';
 import { TvshowComponent } from './Components/tvshow/tvshow.component';
 import { VerifyComponent } from './Components/verify/verify.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { VerifyComponent } from './Components/verify/verify.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
