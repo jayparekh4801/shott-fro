@@ -38,7 +38,8 @@
                         </div>
                         <div class="nav-right">
                             <ul>
-                                <li><a class="js-cd-panel-trigger" data-panel="main" href="#0">Login / Register</a></li>
+                                <li><a class="js-cd-panel-trigger" data-panel="main" (click)="openSidePanel()"
+                                        style="cursor: pointer;">Login / Register</a></li>
                             </ul>
                         </div>
                     </div>
@@ -84,29 +85,30 @@
         <div class="container-fluid space-tv">
             <h1 class="heading-tv">Latest</h1>
             <div id="owl-demo-full-1" class="owl-carousel scroll-movies">
-                <div *ngFor="let movie of latestMovies" class="item">
+                <!-- <div class="item" >
 
                     <img src="assets/images/Telugu/Thumbnails/Master-thumb.jpg">
                     <p class="movie-name">{{movie.title}}</p>
 
-                    <!-- <img src={{movie.thumbnail}} alt=""> -->
-                    <!-- <p class="movie-name">Master (Telugu)</p> -->
-                    <!-- <div *ngFor = "let movie of latestMovies">/div> -->
+                    <img src={{movie.thumbnail}} alt="">
+                    <p class="movie-name">Master (Telugu)</p>
+                    <div *ngFor = "let movie of latestMovies">/div>
 
+                </div> -->
+                <div>
+                    <div class="item" *ngFor="let movie of latestMovies">
+                        <img src="assets/images/Telugu/Thumbnails/krack-thumb.jpg">
+                        <p class="movie-name">{{movie.title}}</p>
+                    </div>
                 </div>
 
                 <!-- <div class="item">
-                    <img src="assets/images/Telugu/Thumbnails/krack-thumb.jpg">
-                    <p class="movie-name">Crack (Telugu)</p>
-                </div>
-
-                <div class="item">
                     <img src="assets/images/Telugu/Thumbnails/jathiratnalu-thumb.jpg">
                     <p class="movie-name">Jathiratnalu (Telugu)</p>
-                </div>
+                </div> -->
 
 
-                <div class="item">
+                <!--<div class="item">
                     <img src="assets/images/Telugu/Thumbnails/Gali-Sampath-thumb.jpg">
                     <p class="movie-name">Gali Sampath (Telugu)</p>
                 </div>
