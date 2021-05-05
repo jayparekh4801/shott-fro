@@ -10,14 +10,14 @@ export class IndexService {
 	constructor(private http: HttpClient) { }
 
 	getBanners() {
-		return this.http.get("http://localhost:3001/api/allbanners");
+		return this.http.get("https://api.shott.tech/api/allbanners");
 	}
 
 	getLatestMovies() {
-		return this.http.get('http://localhost:3001/api/allTrendvideos');
+		return this.http.get('https://api.shott.tech/api/allTrendvideos');
 	}
 
 	getTrendingMovies() {
-		return this.http.get('http://localhost:3001/api/Trendvideos');
+		return this.http.get('https://api.shott.tech/api/Trendvideos');
 	}
 }
