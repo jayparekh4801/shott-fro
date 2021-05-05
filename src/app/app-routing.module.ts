@@ -21,7 +21,6 @@ const routes: Routes = [
   { path : "movie-view", component : MovieViewComponent },
   { path : "tvshow-view", component : TvshowComponent },
   { path : "movie-play", component : MoviePlayComponent },
-  { path : "moview-view", component : MovieViewComponent },
   { path : "login", component : LoginComponent }, 
   { path : "register", component : RegisterComponent }, 
   { path : "subscription", component : SubscriptionComponent }, 

@@ -96,7 +96,7 @@
 
                 </div> -->
                 <div>
-                    <div class="item" *ngFor="let movie of latestMovies">
+                    <div class="item" *ngFor="let movie of latestMovies" routerLink = "/movie-view">
                         <img src="assets/images/Telugu/Thumbnails/krack-thumb.jpg">
                         <p class="movie-name">{{movie.title}}</p>
                     </div>
@@ -105,16 +105,16 @@
                 <!-- <div class="item">
                     <img src="assets/images/Telugu/Thumbnails/jathiratnalu-thumb.jpg">
                     <p class="movie-name">Jathiratnalu (Telugu)</p>
-                </div> -->
-
-
-                <!--<div class="item">
-                    <img src="assets/images/Telugu/Thumbnails/Gali-Sampath-thumb.jpg">
-                    <p class="movie-name">Gali Sampath (Telugu)</p>
                 </div>
 
 
                 <div class="item">
+                    <img src="assets/images/Telugu/Thumbnails/Gali-Sampath-thumb.jpg">
+                    <p class="movie-name">Gali Sampath (Telugu)</p>
+                </div> -->
+
+
+                <!-- <div class="item">
                     <img src="assets/images/Telugu/Thumbnails/Aranya-thumb.jpg">
                     <p class="movie-name">Aranya (Telugu)</p>
                 </div>
@@ -153,13 +153,14 @@
         <div class="container-fluid space-tv">
             <h1 class="heading-tv">Trending</h1>
             <div id="owl-demo-full-2" class="owl-carousel scroll-movies">
-
-                <div class="item">
-                    <img src="assets/images/English/Thumbnails/aquaman-thumb.jpg">
-                    <p class="movie-name">Aquaman (English)</p>
+                <div>
+                    <div class="item" *ngFor="let movie of trendingMovies" routerLink = "/movie-view">
+                        <img src="assets/images/English/Thumbnails/aquaman-thumb.jpg">
+                        <p class="movie-name">{{movie.title}}</p>
+                    </div>
                 </div>
 
-                <div class="item">
+                <!-- <div class="item">
                     <img src="assets/images/English/Thumbnails/kong-skull-island-thumb.jpg">
                     <p class="movie-name">KONG Skull Island (English)</p>
                 </div>
@@ -204,7 +205,7 @@
                 <div class="item">
                     <img src="assets/images/English/Thumbnails/wonderwoman1984-thumb.jpg">
                     <p class="movie-name">Wonder Women 84 (English)</p>
-                </div>
+                </div> -->
 
             </div>
         </div>
